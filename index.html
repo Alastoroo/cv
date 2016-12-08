@@ -17,11 +17,11 @@
 	<nav>
 		<div class="nav-wrapper">
 			<ul class="left hide-on-med-and-down">
-				<li><a href="sass.html">Presentation</a></li>
-				<li><a href="badges.html">Competence</a></li>
-				<li><a href="#">Les plus</a></li>
+				<li><a href="#presentation">Presentation</a></li>
+				<li><a href="#competence">Competences</a></li>
+				<li><a href="#realisation">Réalisations</a></li>
+				<li><a href="#">Personel</a></li>
 				<li><a href="#">Me contacter</a></li>
-				<li><a href="#">JavaScript</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -32,10 +32,10 @@
 		<i class="large material-icons">mode_edit</i>
 	</a>
 	<ul>
-		<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
-		<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
-		<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
-		<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+	<!--	<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+		<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li> -->
+		<li><a class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Télécharger mon CV" href="#">C.V</a></li>
+		<li><a class="btn tooltipped" data-position="top" data-delay="50" data-tooltip="Télécharger livret de compétence" href="BLECHET-Colin - Livret-de-validation-des-compétences.pdf">Compétences</a></li>
 	</ul>
 </div>
 	<!-- Bouton FLOAT FIN -->
@@ -71,6 +71,7 @@
 				<hr>
 
 				<center>
+					<div id="presentation">
 					<div class="col s12 m12 offset-m2 l6 offset-l3">
 						<div class="card horizontal" style="margin-top: 20px; margin-bottom: 35px;">
 							<div class="card-image">
@@ -98,7 +99,7 @@
 
 					<a class="carousel-item" href="https://www.skype.com"><img src="174834-social-media-logos/png/skype.png"></a>
 
-					<a class="carousel-item" href="https://www.skype.com"><img src="174834-social-media-logos/png/social-media (3).png"></a>
+					<a class="carousel-item" href="https://www.github.com"><img src="174834-social-media-logos/png/social-media (3).png"></a>
 
 				</div>
 				<center>
@@ -109,6 +110,7 @@
 							et j'ai donc voulu pousser mon apprentissage plus loin. La solution a été de faire la Wild Code School pour des participé a des projet client<br />
 							et apprendre un langage de programation, tout en mintegrant dans le monde du dévelopement.<br /></p>
 				</div>
+			</div>
 			</center>
 				<!--
 				<div class='ui'>
@@ -186,6 +188,7 @@
 				<div class="row container">
 					<h2 class="header"></h2>
 					<p class="grey-text text-darken-3 lighten-3">
+						<div id="competence">
 						<H1>COMPETENCES</H1>
 						<hr>
 						<div class='ui'>
@@ -241,22 +244,27 @@
 						</div>
 					</div>
 				</div>
+				</div>
 				<div class="section white">
 					<div class="row container">
 						<h2 class="header"></h2>
 						<p class="grey-text text-darken-3 lighten-3">
+							<div id="realisation">
 							<h1>Réalisations</h1>
+							<hr>
 								<p> <B>les réalisations à venir:</B> <br />
 										Tech in Chartres - site de meetUp dediée au nouvel technologie ( bientôt en ligne ).<br />
 										La demeure de l'Arche - refonte d'un site de maison d'hote situé dans le sud de la france ( en court ).<br />
 										Yunalyn-art - site d'une artiste ( dessins, musique ) bientot en court</p>
+								</div>
 							<h1>Veille Techno</h1>
-
+								<hr>
 								<p>Ionic / cordova<br />
 										React et React Native</p>
+
 							<h1>COMPETENCES PERSONEL</h1>
 							<hr>
-							<!-- ACCOrDION DEBUT DANS LE PARALAX -->
+							<!-- ACCOrDION DEBUT DANS LE PARALAX
 							<ul class="collapsible" data-collapsible="accordion">
 								<li>
 									<div class="collapsible-header">Allemand</div>
@@ -271,7 +279,7 @@
 									<div class="collapsible-body"><p>Gros projet personel, je crée tout les jours et trouve des solution ausis de maniere creative</p></div>
 								</li>
 							</ul>
-							<!-- ACCORDION FIN DANS LE PARALAX -->
+							 ACCORDION FIN DANS LE PARALAX -->
 						</div>
 					</div>
 							<!-- COMPETENCE PERSO A METTRE AUTRE PARS
@@ -313,7 +321,31 @@
 						-->
 					</div>
 				</div>
+
+
 						<!-- PARALLAX FIN -->
+						<!-- FORM DEBUT
+						<div class="row">
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Email</label>
+        </div>
+      </div>
+    </form>
+  </div>
+						 FORM FIN -->
 						<!-- FOOTER DEBUT -->
 						<footer class="page-footer">
 							<div class="container">
@@ -352,16 +384,29 @@
 						<!-- SCRIPT DEBUT -->
 						<script>
 
-							$(document).ready(function(){
-								$('.carousel').carousel();
-							});
-							$(document).ready(function(){
-								$('.parallax').parallax();
-							});
-								// Initialize collapse button
-								$(".button-collapse").sideNav();
-  								// Initialize collapsible (uncomment the line below if you use the dropdown variation)
-  								//$('.collapsible').collapsible();
+									$(document).ready(function(){
+										$('.carousel').carousel();
+									});
+									$(document).ready(function(){
+										$('.parallax').parallax();
+									});
+										// Initialize collapse button
+											$(".button-collapse").sideNav();
+  									// Initialize collapsible (uncomment the line below if you use the dropdown variation)
+  									//$('.collapsible').collapsible();
+
+										//tooltip DELAY
+										$(document).ready(function(){
+		     							$('.tooltipped').tooltip({delay: 50});
+		   							});
+
+											// This will remove the tooltip functionality for the buttons on this page
+  										$('.tooltipped').tooltip('remove');
+
+											// FORM
+										// 	$(document).ready(function() {
+	 								// 		$('select').material_select();
+ 									// 	});
   							</script>
   							<!-- SCRIPT FIN -->
 
